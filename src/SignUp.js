@@ -25,7 +25,7 @@ export default function SignUp() {
       const handleSubmit = (e) => {
        e.preventDefault();
        
-       axios.post('http://localhost:8033/register', {username, password, email})
+       axios.post('https://auth-system-api.onrender.com/register', {username, password, email})
        .then(result=>{console.log(result)
         navigate('/signin')
        })
